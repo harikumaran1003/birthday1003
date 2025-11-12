@@ -25,7 +25,7 @@ function showCountdownScreen(){
       <button class="skip-btn" onclick="showWelcomeScreen()">Skip ⏩</button>
     </div>`;
   createFloatingHearts();fireworksInit();
-  const target=new Date("November 13, 2025 00:00:00").getTime();
+  const target=new Date("November 14, 2025 00:00:00").getTime();
   const t=setInterval(()=>{
     const now=new Date().getTime(),diff=target-now;
     if(diff<=0){clearInterval(t);startBirthdayShow();return;}
@@ -351,3 +351,4 @@ function stopAllMusic(){
     m.pause();m.currentTime=0;
   });
 }
+
